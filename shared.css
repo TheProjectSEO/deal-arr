@@ -62,11 +62,18 @@ code,pre,.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.92
 .section h2{font-size:clamp(28px,3.4vw,42px);font-weight:800;letter-spacing:-1.3px;line-height:1.08;margin-bottom:20px;color:var(--ink)}
 .section h2 .serif{font-weight:400;letter-spacing:-1.1px;color:var(--accent);font-style:italic}
 .section-dark h2{color:white}
+.section-dark h3,.section-dark h4{color:white}
 .section-dark .section-eyebrow{color:var(--accent)}
 .section-lede{font-size:18px;color:var(--ink-light);line-height:1.65}
 .section-lede strong{color:var(--ink);font-weight:600}
 .section-dark .section-lede{color:rgba(255,255,255,.7)}
 .section-dark .section-lede strong{color:white}
+/* Safety-net defaults — bare p/li/strong inside dark sections get light text */
+.section-dark p{color:rgba(255,255,255,.82)}
+.section-dark p strong{color:white}
+.section-dark li{color:rgba(255,255,255,.82)}
+.section-dark .callout p{color:var(--ink)}
+.section-dark .callout p strong{color:var(--ink)}
 .prose p{font-size:16.5px;line-height:1.7;color:var(--ink);margin-bottom:18px;max-width:760px}
 .prose p.muted{color:var(--ink-light)}
 .prose p.dropcap::first-letter{font-family:'Instrument Serif',serif;font-size:62px;float:left;line-height:.85;padding:6px 10px 0 0;color:var(--accent);font-style:italic}
@@ -101,6 +108,17 @@ table th{padding:11px 12px;text-align:left;font-weight:700;color:var(--ink);text
 table td{padding:11px 12px;border-bottom:1px solid var(--border-soft);color:var(--ink);vertical-align:top}
 table tr:last-child td{border-bottom:none}
 table tr.milestone{background:var(--accent-soft);font-weight:600}
+
+/* Dark-section table overrides — fixes invisible navy-on-navy text */
+.section-dark table{color:rgba(255,255,255,.88)}
+.section-dark table thead{background:rgba(255,255,255,.04)}
+.section-dark table th{color:white;border-bottom-color:rgba(255,255,255,.14)}
+.section-dark table td{color:rgba(255,255,255,.82);border-bottom-color:rgba(255,255,255,.08)}
+.section-dark table tr.milestone{background:rgba(255,107,92,.18)}
+.section-dark table tr.milestone td{color:white}
+.section-dark .chart-container{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)}
+.section-dark .chart-title{color:white}
+.section-dark .chart-subtitle{color:rgba(255,255,255,.6)}
 
 footer{background:var(--brand-darker);background-image:var(--dot-grid),linear-gradient(135deg,var(--brand-dark) 0%,var(--brand-darker) 100%);background-size:24px 24px,100% 100%;color:rgba(255,255,255,.7);padding:72px 24px 40px}
 .footer-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px}
