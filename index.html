@@ -62,6 +62,36 @@
       <p><strong>dealarr.com has a structural crawler-visibility issue at the platform layer.</strong> When Google, Bing, and the LLM crawlers (ChatGPT, Perplexity, Gemini, Claude) visit your domain, what they receive is a tiny fraction of what a human user sees after the page loads. Until that gap closes, every piece of new content disappears into a black hole — which is exactly what the past months of zero traffic reflect. This is a well-documented category of issue, observable with basic diagnostic tools. The surprise isn't that it exists; it's that your current vendor hasn't flagged it or addressed it.</p>
     </div>
 
+    <!-- Google index proof point -->
+    <div style="margin-top:28px;padding:28px 32px;background:white;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm)">
+      <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap">
+        <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.3px;color:var(--accent-dark)">The evidence · Nina-verifiable in 10 seconds</div>
+        <div style="font-size:11.5px;color:var(--ink-light)">Run <code style="background:var(--bg);padding:2px 6px;border-radius:3px;font-size:12px">site:dealarr.com/</code> in Google right now. This is what you'll see.</div>
+      </div>
+      <h3 style="font-size:22px;font-weight:800;letter-spacing:-.6px;color:var(--ink);margin:8px 0 18px;line-height:1.2">Google has indexed <span style="color:var(--accent)">exactly 2 pages</span> of dealarr.com.</h3>
+      <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px;margin-top:12px">
+        <img src="assets/dealarr-google-index-2026-04-22.png" alt="Google search results for site:dealarr.com showing only 2 indexed pages — the homepage and the /register trial signup page" style="width:100%;height:auto;display:block;border-radius:var(--radius-sm);box-shadow:var(--shadow-sm)"/>
+      </div>
+      <div style="margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
+        <div style="padding:16px 18px;background:var(--bg);border-radius:var(--radius-sm)">
+          <div style="font-size:28px;font-weight:800;letter-spacing:-.8px;color:var(--accent);line-height:1">2</div>
+          <div style="font-size:12px;color:var(--ink-light);margin-top:6px;text-transform:uppercase;letter-spacing:.8px;font-weight:600">Indexed pages</div>
+          <div style="font-size:12.5px;color:var(--ink-light);margin-top:6px;line-height:1.55">Homepage + /register. Every product, feature, integration, and module page is missing.</div>
+        </div>
+        <div style="padding:16px 18px;background:var(--bg);border-radius:var(--radius-sm)">
+          <div style="font-size:28px;font-weight:800;letter-spacing:-.8px;color:var(--accent);line-height:1">50+</div>
+          <div style="font-size:12px;color:var(--ink-light);margin-top:6px;text-transform:uppercase;letter-spacing:.8px;font-weight:600">Indexed pages a healthy B2B SaaS has</div>
+          <div style="font-size:12.5px;color:var(--ink-light);margin-top:6px;line-height:1.55">Including feature pages, integration pages, blog posts, case studies, pricing variants, legal pages.</div>
+        </div>
+        <div style="padding:16px 18px;background:var(--accent-soft);border:1px solid var(--accent);border-radius:var(--radius-sm)">
+          <div style="font-size:28px;font-weight:800;letter-spacing:-.8px;color:var(--accent-dark);line-height:1">96%</div>
+          <div style="font-size:12px;color:var(--accent-dark);margin-top:6px;text-transform:uppercase;letter-spacing:.8px;font-weight:600">Of dealarr.com is invisible to Google</div>
+          <div style="font-size:12.5px;color:var(--ink);margin-top:6px;line-height:1.55">Conservative estimate based on known URL patterns from your sitemap + crawl.</div>
+        </div>
+      </div>
+      <p style="font-size:14px;color:var(--ink);line-height:1.6;margin-top:20px;margin-bottom:0"><strong>Why this matters:</strong> you can't outrun indexability with content velocity. Publishing 30 more blog posts, or 100 more feature pages, adds zero if 96% of what already exists isn't in Google's index to begin with. This is the foundational problem — and until it's solved, every dollar spent on new SEO content is spent against a wall.</p>
+    </div>
+
     <div class="callout">
       <div class="callout-eyebrow">What's in scope at engagement · not published here</div>
       <p>We've mapped <strong>three viable remediation paths</strong> for this — each with specific tradeoffs on engineering effort, ongoing maintenance cost, AEO implications, and long-term flexibility. The right choice depends on your stack, your dev team's capacity, your funding runway, and your 18-month product roadmap — variables we only assess properly post-signing. We deliberately don't publish the decision framework here. Not because it's proprietary magic, but because a generic recipe handed to a generalist SEO vendor would push you toward the cheapest option, which is almost always the wrong one for a VC-funded B2B SaaS that's about to raise. Get the architectural decision wrong now, you'll regret it 18 months in. Getting it right is part of what we do.</p>
