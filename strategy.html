@@ -51,7 +51,7 @@
       <div class="obs-card">
         <div class="obs-num">Pillar 01 · Weeks 1-6</div>
         <h3 class="obs-title">Technical foundation</h3>
-        <p class="obs-body"><strong>SSR or prerender deployment.</strong> Nothing else works until Googlebot + LLM crawlers can see the site. Schema site-wide (Organization, SoftwareApplication, Product, FAQ, Article, Person, BreadcrumbList). GSC + GA4 + Bing Webmaster + attribution plumbing. Core Web Vitals green. <em>Source: <a href="https://ahrefs.com/blog/javascript-seo/" target="_blank">Ahrefs — JavaScript SEO</a>; <a href="https://moz.com/blog/optimizing-angularjs-single-page-applications-googlebot-crawlers" target="_blank">Moz — Optimizing SPAs for Googlebot</a>.</em></p>
+        <p class="obs-body"><strong>Platform-layer rendering remediation.</strong> Nothing else works until Google, Bing, and the LLM crawlers can actually see the site. We architect the architectural decision with your CTO (three viable paths, each with specific tradeoffs on engineering effort, maintenance, AEO, and 18-month flexibility); your engineering team executes. Then schema site-wide, GSC + GA4 + Bing Webmaster + attribution plumbing, Core Web Vitals green. <em>The specific remediation framework is decided post-signing — publishing generic advice here would push you toward the cheapest option, which is almost always wrong for a VC-funded SaaS.</em></p>
       </div>
 
       <div class="obs-card">
@@ -107,8 +107,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td><strong>1</strong></td><td>Foundation</td><td>Technical audit, SSR path, schema plan, attribution spec</td><td>Tech fix queue · 3 pillars drafted · access complete</td><td></td></tr>
-          <tr><td><strong>2</strong></td><td>Foundation</td><td>SSR deploy, schema deploy, 5 pillars published, GSC wired</td><td>5 L1 pages · attribution live · Nina LinkedIn cadence starts</td><td></td></tr>
+          <tr><td><strong>1</strong></td><td>Foundation</td><td>Technical audit, rendering architecture decision, schema plan, attribution spec</td><td>Tech fix queue · 3 pillars drafted · access complete</td><td></td></tr>
+          <tr><td><strong>2</strong></td><td>Foundation</td><td>Platform rendering fix deploy, schema deploy, 5 pillars published, GSC wired</td><td>5 L1 pages · attribution live · Nina LinkedIn cadence starts</td><td></td></tr>
           <tr><td><strong>3</strong></td><td>Foundation</td><td>10 L2 sub-topics, BOFU queue prioritized, first listicle outreach</td><td>15 pages live · 3 listicle contacts opened</td><td></td></tr>
           <tr class="milestone"><td><strong>4</strong></td><td>Gate 1 review</td><td>First 5 BOFU pages, keyword ranking emerging, AEO capsules drafted</td><td><strong>25 pages · 3+ KWs top 20 · 1st AEO citation</strong></td><td>Gate 1 unlock</td></tr>
           <tr><td><strong>5</strong></td><td>Engine</td><td>Competitor-displacement pages (vs ChartMogul/Maxio/Mosaic), podcast outreach</td><td>10 BOFU pages · 3 podcast bookings</td><td></td></tr>
@@ -135,8 +135,8 @@
 
     <div class="scope-grid">
       <div class="scope-card" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)">
-        <h4 style="color:white">1. Render fix gates everything</h4>
-        <p style="color:rgba(255,255,255,.75);font-size:13.5px;margin-top:8px">If SSR/prerender ships in Week 2-4, Gate 1 is achievable. If it slips to Month 3, Gate 1 slips to Month 5-6. Our #1 Week 1 priority is helping your dev team pick the right rendering strategy (Next.js migration vs Prerender.io middleware vs dynamic rendering).</p>
+        <h4 style="color:white">1. Platform fix gates everything</h4>
+        <p style="color:rgba(255,255,255,.75);font-size:13.5px;margin-top:8px">If the rendering remediation ships in Week 2-4, Gate 1 is achievable. If it slips to Month 3, Gate 1 slips to Month 5-6. Our #1 Week 1 priority is working with your CTO to pick the right architectural path — three viable options, each with specific tradeoffs we'll map against your stack, team capacity, and runway.</p>
       </div>
 
       <div class="scope-card" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)">

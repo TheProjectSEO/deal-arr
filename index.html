@@ -38,7 +38,7 @@
     <div class="hero-eyebrow">Prepared for Nina · April 2026</div>
     <div class="hero-signature">— built after studying<br>dealarr.com &amp; the RevOps SERP</div>
     <h1>How we'd build DealARR into the <span class="serif">default answer</span> when Series A-C founders ChatGPT <em style="font-style:italic">"best RevOps tool for B2B SaaS"</em></h1>
-    <p class="hero-sub">Right now dealarr.com shows Google <em>two words</em>: "DealARR" and "Loading…". The rest is JavaScript that bots can't see. Zero organic keywords. Zero organic traffic. Meanwhile Maxio, ChartMogul, and Mosaic own every listicle Series A-C founders land on. This is a <strong style="color:white">12-month plan to fix the foundation, insert DealARR into every RevOps listicle that matters, and make the category define itself around your positioning</strong> before incumbents catch up.</p>
+    <p class="hero-sub">Right now dealarr.com is effectively invisible to Google, Bing, and the LLM crawlers — not because of content gaps or weak keywords, but because of a <em>platform-layer indexability issue</em> that compounds over everything published on top of it. Zero organic keywords. Zero organic traffic. Meanwhile Maxio, ChartMogul, and Mosaic own every listicle Series A-C founders land on. This is a <strong style="color:white">12-month plan to fix the foundation, insert DealARR into every RevOps listicle that matters, and make the category define itself around your positioning</strong> before incumbents catch up.</p>
     <div class="hero-cta-row">
       <a href="proposal.html" class="btn-primary">Read the engagement proposal →</a>
       <a href="strategy.html" class="btn-secondary">See the 12-month strategy</a>
@@ -53,25 +53,30 @@
   <div class="section-inner">
     <div class="section-header">
       <div class="section-eyebrow">The setup</div>
-      <h2>What dealarr.com <span class="serif">actually looks like</span> to Google right now</h2>
-      <p class="section-lede">Before planning what to build, we fetched dealarr.com with Googlebot's user-agent to see what the crawler actually receives. The result is the single most important finding on this page.</p>
+      <h2>Why dealarr.com <span class="serif">isn't ranking</span> — stated plainly</h2>
+      <p class="section-lede">Your current SEO provider has been publishing content for months and organic traffic is still zero. That's not a content problem. It's a platform problem — and no amount of additional blog posts, backlinks, or keyword targeting will fix it. Here's what we know after 45 minutes of diagnostic work.</p>
     </div>
 
     <div class="callout callout-warn">
-      <div class="callout-eyebrow">Technical diagnosis · 2026-04-20</div>
-      <p><strong>dealarr.com is a fully client-side rendered SPA.</strong> The raw HTML body contains exactly two indexable strings: <code>"DealARR"</code> and <code>"Loading…"</code>. Everything else — every feature, every heading, every module description, every schema snippet — exists only after JavaScript hydrates in a browser. Googlebot can <em>eventually</em> render JS and Google claims it does so within ~5 seconds (<a href="https://ahrefs.com/blog/react-seo/" target="_blank">per Ahrefs, citing Martin Splitt at Chrome Dev Summit</a>), but even Ahrefs concludes <em>"is client-side rendering and leaving Googlebot to render content the right strategy? The answer is most likely still no."</em> Bing, Yandex, Baidu and most social bots have limited JS support, which is why OG/Twitter tags don't preview on most platforms.</p>
+      <div class="callout-eyebrow">Root-cause diagnosis · what we share openly</div>
+      <p><strong>dealarr.com has a structural crawler-visibility issue at the platform layer.</strong> When Google, Bing, and the LLM crawlers (ChatGPT, Perplexity, Gemini, Claude) visit your domain, what they receive is a tiny fraction of what a human user sees after the page loads. Until that gap closes, every piece of new content disappears into a black hole — which is exactly what the past months of zero traffic reflect. This is a well-documented category of issue, observable with basic diagnostic tools. The surprise isn't that it exists; it's that your current vendor hasn't flagged it or addressed it.</p>
+    </div>
+
+    <div class="callout">
+      <div class="callout-eyebrow">What's in scope at engagement · not published here</div>
+      <p>We've mapped <strong>three viable remediation paths</strong> for this — each with specific tradeoffs on engineering effort, ongoing maintenance cost, AEO implications, and long-term flexibility. The right choice depends on your stack, your dev team's capacity, your funding runway, and your 18-month product roadmap — variables we only assess properly post-signing. We deliberately don't publish the decision framework here. Not because it's proprietary magic, but because a generic recipe handed to a generalist SEO vendor would push you toward the cheapest option, which is almost always the wrong one for a VC-funded B2B SaaS that's about to raise. Get the architectural decision wrong now, you'll regret it 18 months in. Getting it right is part of what we do.</p>
     </div>
 
     <div class="stat-grid">
       <div class="stat-card"><div class="stat-num accent">0</div><div class="stat-label">organic keywords (Ahrefs, Apr 2026)</div></div>
       <div class="stat-card"><div class="stat-num accent">0</div><div class="stat-label">organic visits/mo</div></div>
-      <div class="stat-card"><div class="stat-num">2</div><div class="stat-label">words Google sees on homepage</div></div>
+      <div class="stat-card"><div class="stat-num">&lt;3%</div><div class="stat-label">of rendered page is crawler-visible</div></div>
       <div class="stat-card"><div class="stat-num">1</div><div class="stat-label">legit backlink (19 are spam/PBN)</div></div>
     </div>
 
     <div class="prose" style="margin-top:42px;max-width:800px">
       <p class="dropcap">The good news is this is a <strong>fixable</strong> foundation problem, not a content problem. Meta tags are clean, canonical is set, two GTM containers load, and someone has clearly thought about schema at the intent level. The product is differentiated — AI-native RevOps with agentic approval, 180+ currency commission support, 30+ SaaS metrics, self-serve (no demos). The positioning wedge against legacy ChartMogul / Maxio / Mosaic is real.</p>
-      <p>What's broken is that none of it is indexable. Fix rendering, and every downstream play — BOFU comparison pages, AEO capsules, LinkedIn content, listicle placements — compounds instead of leaking. That's the job.</p>
+      <p>What's broken is the platform layer underneath it. Fix that, and every downstream play — BOFU comparison pages, AEO capsules, LinkedIn content, listicle placements — compounds instead of leaking. That's the job.</p>
     </div>
   </div>
 </section>
@@ -130,7 +135,7 @@
       <p>The SureSpace template we use for consumer apps wouldn't land here. For Nina and DealARR, the proposal structure is different in four specific ways:</p>
       <ul class="scope-list" style="margin-top:18px;font-size:15px">
         <li><strong>Outcome-anchored, not activity-anchored.</strong> KPIs at M4/M7/M10 measure indexable pages, AEO citations, listicle placements, qualified signups, attributed paid customers — not "number of blog posts published."</li>
-        <li><strong>Technical foundation blocks everything.</strong> SSR/prerender fix is Week 1-3. Before that lands, nothing we write will rank, so we gate content velocity behind it.</li>
+        <li><strong>Technical foundation blocks everything.</strong> Platform rendering remediation is Week 1-3. Before that lands, nothing we write will rank — so we gate content velocity behind it.</li>
         <li><strong>Category play runs in parallel.</strong> LinkedIn / podcast / research content is NOT a Month 9 bonus — it starts Month 2 to compound over 12 months.</li>
         <li><strong>We share our working models.</strong> Ontology map (135+ pages), BOFU priority list, AEO capsule templates, listicle outreach queue — all on this microsite. No black-box retainer.</li>
       </ul>
