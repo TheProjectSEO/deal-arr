@@ -83,8 +83,9 @@
             <li>Platform rendering fix shipped (architectural decision → spec → your dev team ships) · site fully indexable to Google + LLM crawlers</li>
             <li>25+ indexable pages live · schema site-wide (7 types)</li>
             <li>3+ keywords ranking top 20 · attribution tracking wired</li>
-            <li><strong>15-25 signups/mo</strong> attributed to organic</li>
+            <li><strong>15-25 signups/mo</strong> attributed to organic (measured in the marketing intelligence dashboard)</li>
             <li>1st AEO citation in ChatGPT / Perplexity / Gemini</li>
+            <li><strong>Unified dashboard live</strong> — Google Ads + Search Console + GA4 + signup attribution, board-exportable</li>
           </ul>
         </div>
         <div style="margin-top:18px;padding:14px 16px;background:var(--accent-soft);border-radius:var(--radius-sm)">
@@ -213,6 +214,11 @@
       <p>Compared to our SureSpace engagement (consumer app, $40 ARPU, cumulative BE at Month 20), DealARR's unit economics compound 2-3× faster because every organic-driven paid customer contributes ~$468/mo in net margin vs. SureSpace's ~$30. Once the platform fix ships and BOFU pages start ranking, the math moves decisively in your favor. The model <strong>works even under pessimistic BASE assumptions</strong> — and TARGET is very achievable with the ontology we've laid out.</p>
     </div>
 
+    <div class="callout callout-warn" style="margin-top:16px">
+      <div class="callout-eyebrow">ARPU caveat · stated openly</div>
+      <p><strong>$600 blended ARPU is modeled on DealARR's listed pricing, not actual cohort data</strong> — no paying customers yet as of April 2026. The model is defensible per industry guidance on using listed pricing + competitor ACV benchmarks for pre-revenue SaaS (Ahrefs TAM methodology). The first cohort's real numbers — actual seats/customer, attach rate on the $399/mo financial-modeling add-on, churn — will refine the model Months 4-6. If reality comes in 20% below listed-price assumptions, TARGET still clears cumulative breakeven by Month 12 instead of Month 10. If reality comes in ABOVE (likely if the $399 add-on attaches at even modest rates), all three scenarios compress.</p>
+    </div>
+
     <div class="chart-container" style="margin-top:32px;padding:28px 24px">
       <div class="chart-title">Cumulative cashflow · first 12 months · net of retainer</div>
       <div class="chart-subtitle">Y-axis: cumulative $ net. STRETCH exits top of chart just after M10 continuing to $152K by M12. BASE stays negative through M12 (cumulative BE at M13).</div>
@@ -302,16 +308,16 @@
     <div class="scope-grid" style="grid-template-columns:repeat(3,1fr)">
       <div class="scope-card">
         <div class="scope-num">Phase 1 · Months 1-4</div>
-        <h4>Foundation · make the site indexable</h4>
+        <h4>Foundation · indexable + instrumented</h4>
         <ul class="scope-list" style="font-size:13.5px">
-          <li>Platform rendering remediation — we architect the decision with your CTO in Week 1-2 (three viable paths, specific tradeoffs mapped), your engineering team executes</li>
-          <li>Schema markup site-wide: Organization, SoftwareApplication, Product, FAQPage, Article, Person, BreadcrumbList</li>
-          <li>GSC + GA4 + Ahrefs + Bing Webmaster wired, attribution live</li>
-          <li>25 indexable pages shipped — 5 L1 pillars, 15 L2 sub-topics, 5 BOFU</li>
-          <li>Technical audit → fix queue → ship + verify</li>
-          <li>Competitor comparison stack starts (DealARR vs ChartMogul / Maxio / Mosaic)</li>
-          <li>LinkedIn founder content cadence with Nina (3 posts/wk)</li>
-          <li>First 3 listicle outreach sequences opened</li>
+          <li><strong>Web dev + platform migration</strong> — content layer moves off Replit onto a server-rendered stack we deploy and operate (we ship it, not your team). App remains on Replit.</li>
+          <li><strong>Content already in your sitemap gets released</strong> — 45 pages + 57 blog URLs already written but not indexed. They come live on the new stack with proper schema + internal linking.</li>
+          <li>Schema site-wide: Organization, SoftwareApplication, Product, FAQPage, Article, Person, BreadcrumbList</li>
+          <li>GSC + GA4 + Bing Webmaster + Ahrefs + Google Ads API wired · attribution stitched across organic and paid</li>
+          <li><strong>Unified marketing intelligence dashboard live</strong> — Google Ads + Search Console + GA4 + signup attribution in one view (same architecture we run for X0PA · Expressway reference)</li>
+          <li>8 highest-priority BOFU pages shipped first (paddle · gong · chargebee · gainsight · chartmogul · baremetrics alternative + clari-vs-gong · chartmogul-vs-baremetrics — Ahrefs-validated vol 50-200, KD 0)</li>
+          <li>LinkedIn founder content cadence with Nina (3 posts/wk) · Nina trained to update content herself via Claude Code</li>
+          <li>First 3 listicle outreach sequences opened (ORM · Forecastio · AutoRFP)</li>
         </ul>
       </div>
 
@@ -319,12 +325,13 @@
         <div class="scope-num">Phase 2 · Months 5-7</div>
         <h4>Content engine · the 30 BOFU pages</h4>
         <ul class="scope-list" style="font-size:13.5px">
-          <li><strong>30 BOFU pages shipped</strong> — the full comparison + alternative + use-case stack Series A-C buyers actually search (detailed in next section)</li>
+          <li><strong>30 BOFU pages shipped</strong> — 8 Ahrefs-validated alternative pages from Phase 1 + 10 "DealARR vs X" pages + 12 "RevOps for [segment]" use-case pages (detailed in next section)</li>
           <li>Full L2 topical spine — 20+ sub-topic pages anchoring the BOFU pages (cumulative 75)</li>
-          <li>AEO capsule stack: 30 FAQ-rich pages targeting LLM citation</li>
-          <li>3+ listicle placements secured (ORM, Forecastio, AutoRFP, Zapier)</li>
+          <li>AEO capsule stack: 30 FAQ-rich pages targeting LLM citation on AI-Overview-triggering queries (paddle · gong · chargebee · gainsight · clari-vs-gong alternatives all trigger AI Overviews)</li>
+          <li>3+ listicle placements secured (ORM · Forecastio · AutoRFP · Zapier)</li>
           <li>First podcast bookings for Nina (3-5 pods in pipeline)</li>
           <li>First research artifact: "State of RevOps for Series A-C SaaS 2026" data pull</li>
+          <li>Dashboard v2 — attribution model refined as first paying customers come through organic</li>
         </ul>
       </div>
 
@@ -338,6 +345,7 @@
           <li>Category phrase ownership: "AI-native RevOps" surfaces Nina / DealARR in LLM answers</li>
           <li>G2 + Capterra + Gartner review acceleration playbook</li>
           <li>Quarterly State of RevOps report — content flywheel</li>
+          <li>Dashboard matures into board-ready format — monthly export covering attribution, CAC, LTV, market share vs top 5 competitors</li>
           <li>Month 12: DealARR appears in 8-10 industry listicles, 10+ AEO citations, compounding MRR attribution from organic</li>
         </ul>
       </div>
@@ -507,8 +515,8 @@
 
       <div class="obs-card">
         <div class="obs-num">Capability 05</div>
-        <h3 class="obs-title">Automated weekly dashboards</h3>
-        <p class="obs-body">Every Monday: 50 target keywords with rank deltas, AEO citation scorecard, listicle outreach status, signup attribution, top-10 competitor page changes. Two minutes to read. You know exactly what moved. Beats a monthly 40-slide SEO report that no one opens.</p>
+        <h3 class="obs-title">Unified marketing intelligence dashboard</h3>
+        <p class="obs-body">One view for the founder/CFO stack: Google Ads API + Search Console + GA4 + signup attribution + Ahrefs + competitor deltas. Revenue from organic · CAC by channel · market share vs top 5 competitors · ROI vs retainer spend. <em>Source grounding: Backlinko — SEO Analytics for C-Suite.</em> Same architecture we run for Expressway and X0PA — works by Month 2, not Month 9.</p>
       </div>
 
       <div class="obs-card">

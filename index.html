@@ -59,7 +59,8 @@
 
     <div class="callout callout-warn">
       <div class="callout-eyebrow">Root-cause diagnosis · what we share openly</div>
-      <p><strong>dealarr.com has a structural crawler-visibility issue at the platform layer.</strong> When Google, Bing, and the LLM crawlers (ChatGPT, Perplexity, Gemini, Claude) visit your domain, what they receive is a tiny fraction of what a human user sees after the page loads. Until that gap closes, every piece of new content disappears into a black hole — which is exactly what the past months of zero traffic reflect. This is a well-documented category of issue, observable with basic diagnostic tools. The surprise isn't that it exists; it's that your current vendor hasn't flagged it or addressed it.</p>
+      <p><strong>dealarr.com has a structural crawler-visibility issue at the platform layer.</strong> When Google, Bing, and the LLM crawlers (ChatGPT, Perplexity, Gemini, Claude) visit your domain, what they receive is a tiny fraction of what a human user sees after the page loads. Until that gap closes, every piece of new content disappears into a black hole — which is exactly what the past months of zero traffic reflect.</p>
+      <p style="margin-top:12px">The most striking evidence: <strong>your sitemap already lists 45 content pages + 57 blog URLs</strong>, plus comparison pages like <code>/compare/dealarr-vs-chartmogul</code>, <code>/compare/dealarr-vs-maxio</code>, <code>/compare/dealarr-vs-baremetrics</code>. <strong>None of these are indexed by Google.</strong> You already paid to produce the content. You've done the competitor comparison work yourself. The platform layer is the only thing between all of that and real organic traffic. This is a well-documented category of issue, observable with basic diagnostic tools. The surprise isn't that it exists; it's that it hasn't been flagged or addressed.</p>
     </div>
 
     <!-- Google index proof point -->
@@ -79,17 +80,17 @@
           <div style="font-size:12.5px;color:var(--ink-light);margin-top:6px;line-height:1.55">Homepage + /register. Every product, feature, integration, and module page is missing.</div>
         </div>
         <div style="padding:16px 18px;background:var(--bg);border-radius:var(--radius-sm)">
-          <div style="font-size:28px;font-weight:800;letter-spacing:-.8px;color:var(--accent);line-height:1">50+</div>
-          <div style="font-size:12px;color:var(--ink-light);margin-top:6px;text-transform:uppercase;letter-spacing:.8px;font-weight:600">Indexed pages a healthy B2B SaaS has</div>
-          <div style="font-size:12.5px;color:var(--ink-light);margin-top:6px;line-height:1.55">Including feature pages, integration pages, blog posts, case studies, pricing variants, legal pages.</div>
+          <div style="font-size:28px;font-weight:800;letter-spacing:-.8px;color:var(--accent);line-height:1">102</div>
+          <div style="font-size:12px;color:var(--ink-light);margin-top:6px;text-transform:uppercase;letter-spacing:.8px;font-weight:600">Pages declared in your sitemap</div>
+          <div style="font-size:12.5px;color:var(--ink-light);margin-top:6px;line-height:1.55">45 content pages + 57 blog URLs. Including /compare/dealarr-vs-chartmogul, maxio, baremetrics. All already written.</div>
         </div>
         <div style="padding:16px 18px;background:var(--accent-soft);border:1px solid var(--accent);border-radius:var(--radius-sm)">
-          <div style="font-size:28px;font-weight:800;letter-spacing:-.8px;color:var(--accent-dark);line-height:1">96%</div>
-          <div style="font-size:12px;color:var(--accent-dark);margin-top:6px;text-transform:uppercase;letter-spacing:.8px;font-weight:600">Of dealarr.com is invisible to Google</div>
-          <div style="font-size:12.5px;color:var(--ink);margin-top:6px;line-height:1.55">Conservative estimate based on known URL patterns from your sitemap + crawl.</div>
+          <div style="font-size:28px;font-weight:800;letter-spacing:-.8px;color:var(--accent-dark);line-height:1">98%</div>
+          <div style="font-size:12px;color:var(--accent-dark);margin-top:6px;text-transform:uppercase;letter-spacing:.8px;font-weight:600">Of your declared pages are invisible to Google</div>
+          <div style="font-size:12.5px;color:var(--ink);margin-top:6px;line-height:1.55">100 of 102 sitemap URLs fail to be indexed. The writing is done — the platform is what's stopping release.</div>
         </div>
       </div>
-      <p style="font-size:14px;color:var(--ink);line-height:1.6;margin-top:20px;margin-bottom:0"><strong>Why this matters:</strong> you can't outrun indexability with content velocity. Publishing 30 more blog posts, or 100 more feature pages, adds zero if 96% of what already exists isn't in Google's index to begin with. This is the foundational problem — and until it's solved, every dollar spent on new SEO content is spent against a wall.</p>
+      <p style="font-size:14px;color:var(--ink);line-height:1.6;margin-top:20px;margin-bottom:0"><strong>Why this matters:</strong> you can't outrun indexability with content velocity. 102 pages written, 2 indexed — the work is already done, but 98% of it isn't reaching Google. Publishing 30 more won't change the ratio until the platform layer is fixed. This is the foundational problem, and until it's solved, every dollar spent producing more content is spent against a wall.</p>
     </div>
 
     <div class="callout">
@@ -100,7 +101,7 @@
     <div class="stat-grid">
       <div class="stat-card"><div class="stat-num accent">0</div><div class="stat-label">organic keywords (Ahrefs, Apr 2026)</div></div>
       <div class="stat-card"><div class="stat-num accent">0</div><div class="stat-label">organic visits/mo</div></div>
-      <div class="stat-card"><div class="stat-num">&lt;3%</div><div class="stat-label">of rendered page is crawler-visible</div></div>
+      <div class="stat-card"><div class="stat-num">102 → 2</div><div class="stat-label">pages in sitemap vs pages Google indexed</div></div>
       <div class="stat-card"><div class="stat-num">1</div><div class="stat-label">legit backlink (19 are spam/PBN)</div></div>
     </div>
 
